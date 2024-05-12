@@ -81,7 +81,12 @@ export const Header = () => {
 
 function App() {
 	return (
-		<TonConnectUIProvider manifestUrl='https://shikabatareo.github.io/ton_shika/tonconnect-manifest.json'>
+		<TonConnectUIProvider
+			manifestUrl='https://shikabatareo.github.io/ton_shika/tonconnect-manifest.json'
+			actionsConfiguration={{
+				twaReturnUrl: 'https://t.me/shikabatareo_bot',
+			}}
+		>
 			<div>
 				<Header />
 				<Address />
