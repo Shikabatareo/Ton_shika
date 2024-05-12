@@ -25,9 +25,9 @@ export const Settings = () => {
 
 	return (
 		<div>
-			<button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
+			{/* <button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
 				Send transaction
-			</button>
+			</button> */}
 
 			<div>
 				<label>language</label>
