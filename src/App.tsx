@@ -89,7 +89,7 @@ function App() {
 				<Header />
 				<Address />
 				<Wallet />
-				<Settings />
+				{/* <Settings /> */}
 			</div>
 		</TonConnectUIProvider>
 	)
