@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 
 import { TonConnectButton, TonConnectUIProvider } from '@tonconnect/ui-react'
@@ -16,8 +15,6 @@ export const Header = () => {
 }
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<TonConnectUIProvider manifestUrl='https://shikabatareo.github.io/ton_shika/tonconnect-manifest.json'>
 			<div>
