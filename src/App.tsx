@@ -3,13 +3,26 @@ import './App.css'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
+import { TonConnectButton, TonConnectUIProvider } from '@tonconnect/ui-react'
 import WebApp from '@twa-dev/sdk'
+
+export const Header = () => {
+	return (
+		<header>
+			<span>My App with React UI</span>
+			<TonConnectButton
+				className='my-button-class'
+				style={{ float: 'right' }}
+			/>
+		</header>
+	)
+}
 
 function App() {
 	const [count, setCount] = useState(0)
 
 	return (
-		<>
+		<TonConnectUIProvider manifestUrl='https://shikabatareo.github.io/ton_shika/tonconnect-manifest.json'>
 			<div>
 				<a href='https://vitejs.dev' target='_blank'>
 					<img src={viteLogo} className='logo' alt='Vite logo' />
@@ -34,7 +47,7 @@ function App() {
 					Show Alert
 				</button>
 			</div>
-		</>
+		</TonConnectUIProvider>
 	)
 }
 
