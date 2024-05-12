@@ -44,7 +44,7 @@ export const Wallet = () => {
 	return (
 		wallet && (
 			<div>
-				<span>Connected wallet: {wallet.name}</span>
+				<span>Connected wallet: {wallet.account.address}</span>
 				<span>Device: {wallet.device.appName}</span>
 			</div>
 		)
