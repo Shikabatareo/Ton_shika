@@ -8,7 +8,7 @@ export const Header = () => {
 			<span>My App with React UI</span>
 			<TonConnectButton
 				className='my-button-class'
-				style={{ float: 'right' }}
+				style={{ marginTop: '20px' }}
 			/>
 		</header>
 	)
