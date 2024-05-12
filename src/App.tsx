@@ -4,8 +4,6 @@ import { TonConnectButton, TonConnectUIProvider } from '@tonconnect/ui-react'
 
 import { useTonAddress, useTonWallet } from '@tonconnect/ui-react'
 
-import { Locales, useTonConnectUI } from '@tonconnect/ui-react'
-
 // export const EntrypointPage = () => {
 // 	const connectionRestored = useIsConnectionRestored()
 
@@ -16,29 +14,29 @@ import { Locales, useTonConnectUI } from '@tonconnect/ui-react'
 // 	return <MainPage />
 // }
 
-export const Settings = () => {
-	const [tonConnectUI, setOptions] = useTonConnectUI()
+// export const Settings = () => {
+// 	const [tonConnectUI, setOptions] = useTonConnectUI()
 
-	const onLanguageChange = (lang: string) => {
-		setOptions({ language: lang as Locales })
-	}
+// 	const onLanguageChange = (lang: string) => {
+// 		setOptions({ language: lang as Locales })
+// 	}
 
-	return (
-		<div>
-			{/* <button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
-				Send transaction
-			</button> */}
+// 	return (
+// 		<div>
+// 			<button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
+// 				Send transaction
+// 			</button>
 
-			<div>
-				<label>language</label>
-				<select onChange={e => onLanguageChange(e.target.value)}>
-					<option value='en'>en</option>
-					<option value='ru'>ru</option>
-				</select>
-			</div>
-		</div>
-	)
-}
+// 			<div>
+// 				<label>language</label>
+// 				<select onChange={e => onLanguageChange(e.target.value)}>
+// 					<option value='en'>en</option>
+// 					<option value='ru'>ru</option>
+// 				</select>
+// 			</div>
+// 		</div>
+// 	)
+// }
 
 export const Wallet = () => {
 	const wallet = useTonWallet()
